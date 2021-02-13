@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App_Cadastro.View.Home"
+             Title="App Cadastro">
+    <ContentPage.Content>
+        <StackLayout>            
+            <Button x:Name="btnCadastrar" Text="Cadastrar" Margin="15" Background="#00c500" TextColor="White" FontSize="14" Clicked="btnCadastrar_Clicked" />
+            <Button x:Name="btnAlterar" Text="Alterar" Margin="15" Background="gold" TextColor="White" FontSize="14" Clicked="btnAlterar_Clicked" />
+            <Button x:Name="btnExluir" Text="Excluir" Margin="15" Background="Red" TextColor="White" FontSize="14" Clicked="btnExluir_Clicked" />
+            <Button x:Name="btnListar" Text="Listar" Margin="15" VerticalOptions="EndAndExpand" Background="#2196F3" TextColor="White" FontSize="14" Clicked="btnListar_Clicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
