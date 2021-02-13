@@ -5,9 +5,21 @@
              Title="Lista de Registros">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <ListView x:Name="lstDados">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal" Padding="10">
+                                <Label Text="{Binding Id}" />
+                                <Label Text="{Binding Descricao}" />
+                                <Label Text="{Binding Data}" />
+                                <Label Text="{Binding Status}" />
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView> 
+                      
             <Button Text="Voltar" Clicked="Button_Clicked"/>
         </StackLayout>
     </ContentPage.Content>

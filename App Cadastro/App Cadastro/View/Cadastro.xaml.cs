@@ -20,9 +20,9 @@ namespace App_Cadastro.View
         {
             try
             {
-                using (var db = new LiteDatabase(GetFilePath("Data.db")))
+                using (var db = new LiteDatabase(GetFilePath("Banco.db")))
                 {
-                    var col = db.GetCollection<Dados>("dados");
+                    var col = db.GetCollection<Dados>("dados");                    
 
                     var dados = new Dados
                     {
