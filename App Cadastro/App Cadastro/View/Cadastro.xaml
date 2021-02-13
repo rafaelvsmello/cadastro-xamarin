@@ -4,11 +4,12 @@
              x:Class="App_Cadastro.View.Cadastro"
              Title="Novo Cadastro">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-            <Button Text="Voltar" Clicked="Button_Clicked"/>
+        <StackLayout>            
+            <Entry x:Name="txtDescricao" Placeholder="Descrição" ClearButtonVisibility="WhileEditing" />            
+            <DatePicker x:Name="dtpData" Format="dd/MM/yyyy" />
+            <Picker x:Name="pckStatus" Title="Selecione o status" />
+            <Button x:Name="btnCadastrar" Text="Cadastrar" Margin="10" Font="20" BackgroundColor="DimGray" TextColor="White" Clicked="btnCadastrar_Clicked" />
+            <Button Text="Voltar" VerticalOptions="EndAndExpand" Clicked="Button_Clicked"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
